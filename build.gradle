@@ -14,7 +14,8 @@ def allureVersion = "2.17.3",
     restAssured = "4.5.1",
     junitVersion = "5.8.2",
     ownerVersion = "1.0.4",
-    slf4jVersion = "1.7.32"
+    slf4jVersion = "1.7.32",
+    commonsIoVersion = "2.11.0"
 
 allure {
     report {
@@ -38,7 +39,8 @@ dependencies {
             "io.rest-assured:rest-assured:$restAssured",
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
-            "org.slf4j:slf4j-simple:$slf4jVersion"
+            "org.slf4j:slf4j-simple:$slf4jVersion",
+            "commons-io:commons-io:$commonsIoVersion"
     )
 }
 
@@ -57,6 +59,7 @@ tasks.withType(Test) {
         }
     }
 }
+
 
 task android(type: Test) {
     useJUnitPlatform {

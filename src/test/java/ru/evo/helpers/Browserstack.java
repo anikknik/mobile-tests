@@ -1,7 +1,7 @@
 package ru.evo.helpers;
 
 import org.aeonbits.owner.ConfigFactory;
-import owner.BrowserstackOwner;
+import ru.evo.owner.BrowserstackOwner;
 
 import static io.restassured.RestAssured.given;
 import static java.lang.String.format;
